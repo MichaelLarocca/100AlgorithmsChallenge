@@ -9,7 +9,7 @@ export function adjacentElementsProduct(inputArray: number[]): number {
         if(inputArray[i] * inputArray[i+1] > largest) {
             
             largest = inputArray[i] * inputArray[i+1];
-                    console.log(largest)
+                    console.log(largest);
         }
     } 
 
