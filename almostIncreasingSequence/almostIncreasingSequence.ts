@@ -1,5 +1,5 @@
 export function almostIncreasingSequence(sequence: number[]): boolean {
-	let numberToRemove: number;
+	let numberToRemove: number = 0;
 	const arraySequence: number[] = [];
 	let flagIncreasingSequence: boolean = true;
 
