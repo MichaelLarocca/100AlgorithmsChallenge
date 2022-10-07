@@ -13,7 +13,7 @@ export function alphabeticShift(inputString: string): string {
 		"k",
 		"l",
 		"m",
-		"n",
+		"m",
 		"o",
 		"p",
 		"q",
@@ -27,6 +27,24 @@ export function alphabeticShift(inputString: string): string {
 		"y",
 		"z",
 	];
+
+	const arrayAlphabetShift: string[] = [];
+	const string = inputString.split("");
+
+	for (let i = 0; i < string.length; i++) {
+		let letter = alphabet.indexOf(string[i]) + 1;
+		console.log(letter);
+		console.log(string[i]);
+
+		if (letter === 26) {
+			letter = 0;
+		}
+
+		arrayAlphabetShift.push(alphabet[letter]);
+		console.log(alphabet[letter]);
+	}
+	console.log(arrayAlphabetShift);
+	return arrayAlphabetShift.join("");
 }
 
 console.log(alphabeticShift("crazy"));
