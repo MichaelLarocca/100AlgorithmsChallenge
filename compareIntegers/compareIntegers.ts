@@ -1,8 +1,8 @@
 export function compareIntegers(a: string, b: string): string {
 
-    const numOne = parseInt(a);
+    const numOne: number = parseInt(a);
             console.log(typeof numOne);
-    const numTwo = parseInt(b);
+    const numTwo: number = parseInt(b);
             console.log(typeof numTwo);
      
     if(numOne < numTwo) {
@@ -12,7 +12,7 @@ export function compareIntegers(a: string, b: string): string {
     } else {
         return `equal`
     }      
-    
+
 }
 
 console.log(compareIntegers('12', '13'));
