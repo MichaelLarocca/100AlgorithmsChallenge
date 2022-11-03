@@ -1,5 +1,9 @@
 export function encloseInBrackets(inputString: string): string {
 
-}
+        const stringInBrackets: string = `(${inputString})`; 
+                console.log(stringInBrackets);
 
-// console.log(encloseInBrackets('abacaba'));
+        return stringInBrackets;
+    }
+
+console.log(encloseInBrackets('abacaba'));
