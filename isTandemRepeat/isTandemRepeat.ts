@@ -1,9 +1,10 @@
 export function isTandemRepeat(inputString: string): boolean {
-    console.log(inputString);
+        console.log(inputString);
 
     if(inputString.length % 2 === 0) {
         const sliceStringFirstHalf = inputString.slice(0,inputString.length / 2);
                 console.log(sliceStringFirstHalf);
+
         const sliceStringSecondHalf = inputString.slice(inputString.length / 2);   
                 console.log(sliceStringSecondHalf);
 
@@ -15,8 +16,6 @@ export function isTandemRepeat(inputString: string): boolean {
     } else {
         return false;
     }
-
-
 }
 
 console.log(isTandemRepeat('tandemtandem'))
